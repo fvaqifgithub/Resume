@@ -1,6 +1,6 @@
-package com.company.bean.dao.inter;
+package com.company.dao.inter;
 
-import com.company.bean.User;
+import com.company.entity.User;
 
 import java.util.List;
 
@@ -10,5 +10,5 @@ public interface UserDaoInter {
     public boolean addUser(User u) throws Exception;
 
     public boolean removeUser(int id);
-    public User getbyId(int i);
+    public User getById(int i);
 }

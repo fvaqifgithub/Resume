@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="7c43a9c0-7b10-4470-b23f-807621c67866">
-      <console name="resumedb" type="STANDARD" schema="mysql" session="Main" />
+      <console name="resumedb" type="STANDARD" schema="resumedb" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">

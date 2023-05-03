@@ -1,4 +1,4 @@
-package com.company.bean.dao;
+package com.company.dao.inter;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ public abstract class AbstractDao {
         String url = "jdbc:mysql://localhost:3306/resumedb";
         String username = "root";
         String password = "root";
-        Connection c=DriverManager.getConnection(url, username, password);
+        Connection connection=DriverManager.getConnection(url, username, password);
         return DriverManager.getConnection(url, username, password);
     }
 }

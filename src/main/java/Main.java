@@ -1,16 +1,17 @@
-import com.company.bean.User;
-import com.company.bean.dao.impl.UserDaoImpl;
-import com.company.bean.dao.inter.UserDaoInter;
-import com.company.context.Context;
 
-import java.util.List;
+import com.company.dao.impl.EmploymentHistoryDaoImpl;
+import com.company.dao.impl.UserDaoImpl;
+import com.company.dao.inter.CountryDaoInter;
+import com.company.dao.inter.EmploymentHistoryDaoInter;
+import com.company.dao.inter.SkillDaoInter;
+import com.company.entity.EmploymentHistory;
+import com.company.main.Context;
 
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
-        UserDaoImpl u = new UserDaoImpl();
-        List<User> l=u.getAll();
-        System.out.println(l);
+    public static void main(String[] args) {
+        SkillDaoInter s=Context.instanceSkill();
+        System.out.println(s.getAllSkill());
     }
 }
